@@ -14,26 +14,28 @@
         <span style="width: 100%;position: absolute;top: 0;left: 0">向左滑动出现删除</span>
         <span style="padding: 0 1em;background-color: #c03;position: absolute;top: 0;right: -4em;height: 30px" @click="deleteItem">删除</span>
       </div>
-      <div @touchstart.capture="touchstart" @touchend.capture="touchend" style="position: relative;transition: all .3s;background-color: #ddd;height: 30px">
+      <div @click="show=!show" @touchstart.capture="touchstart" @touchend.capture="touchend" style="position: relative;transition: all .3s;background-color: #ddd;height: 30px">
         <span style="width: 100%;position: absolute;top: 0;left: 0">向左滑动出现删除</span>
         <span style="padding: 0 1em;background-color: #c03;position: absolute;top: 0;right: -4em;height: 30px" @click="deleteItem">删除</span>
       </div>
     </div>
-    <dv-border-box-1>
-      <p>1</p>
-      <p>1</p>
-      <p>1</p>
-      <p>1</p>
-      <p>1</p>
-      <p>1</p>
-      <p>1</p>
-      <p>1</p>
-      <p>1</p>
-      <p>1</p>
-      <p>1</p>
-      <p>1</p>
-      <p>1</p>
-    </dv-border-box-1>
+    <transition mode="out-in" enter-active-class="animate__animated animate__fadeInRight" leave-active-class="animate__animated animate__fadeOutRight">
+      <dv-border-box-1 v-show="show">
+        <p>1</p>
+        <p>1</p>
+        <p>1</p>
+        <p>1</p>
+        <p>1</p>
+        <p>1</p>
+        <p>1</p>
+        <p>1</p>
+        <p>1</p>
+        <p>1</p>
+        <p>1</p>
+        <p>1</p>
+        <p>1</p>
+      </dv-border-box-1>
+    </transition>
     <dv-border-box-13>
       <p>1</p>
       <p>1</p>
@@ -43,13 +45,15 @@
       <p>1</p>
       <p>1</p>
     </dv-border-box-13>
-    <dv-border-box-11 title="dv-border-box-11">dv-<p>1</p>
+    <dv-border-box-11 class="animate__animated animate__heartBeat animate__infinite" title="dv-border-box-11">
       <p>1</p>
       <p>1</p>
       <p>1</p>
       <p>1</p>
       <p>1</p>
-      <p>1</p>-box-11</dv-border-box-11>
+      <p>1</p>
+      <p>1</p>
+    </dv-border-box-11>
   </div>
 </template>
 
