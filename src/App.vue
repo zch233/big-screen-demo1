@@ -45,7 +45,7 @@
       <p>1</p>
       <p>1</p>
     </dv-border-box-13>
-    <dv-border-box-11 class="animate__animated animate__heartBeat animate__infinite" title="dv-border-box-11">
+    <dv-border-box-11 class="animate__animated animate__zoomIn animate__infinite" title="dv-border-box-11">
       <p>1</p>
       <p>1</p>
       <p>1</p>
