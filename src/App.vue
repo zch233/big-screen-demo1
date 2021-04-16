@@ -19,8 +19,8 @@
         <span style="padding: 0 1em;background-color: #c03;position: absolute;top: 0;right: -4em;height: 30px" @click="deleteItem">删除</span>
       </div>
     </div>
-    <transition mode="out-in" enter-active-class="animate__animated animate__fadeInRight" leave-active-class="animate__animated animate__fadeOutRight">
-      <dv-border-box-1 v-show="show">
+    <transition mode="out-in" enter-active-class="animate__animated animate__flipInX" leave-active-class="animate__animated animate__flipOutX">
+      <dv-border-box-1 style="background-color: #ddd" v-if="show">
         <p>1</p>
         <p>1</p>
         <p>1</p>
@@ -35,6 +35,21 @@
         <p>1</p>
         <p>1</p>
       </dv-border-box-1>
+      <dv-border-box-4 style="background-color: #ddd" v-if="!show">
+        <p>1</p>
+        <p>1</p>
+        <p>1</p>
+        <p>1</p>
+        <p>1</p>
+        <p>1</p>
+        <p>1</p>
+        <p>1</p>
+        <p>1</p>
+        <p>1</p>
+        <p>1</p>
+        <p>1</p>
+        <p>1</p>
+      </dv-border-box-4>
     </transition>
     <dv-border-box-13>
       <p>1</p>
